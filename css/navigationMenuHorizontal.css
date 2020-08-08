@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+header{
+    background-color: thistle;
+}
+header>nav{
+    width: 100%;
+    text-align: left;
+}
+nav> ul{
+    overflow: hidden;
+    list-style: none;
+}
+nav ul > li{
+   float: left;
+   list-style: none;
+   /* display: inline-block; */
+}
+
+nav ul li > a{
+    display: inline-block;
+    text-decoration: none;  
+    color: white;
+    padding: 15px 20px;
+} 
+nav ul li > a:hover{
+    background-color: black;
+    
+}

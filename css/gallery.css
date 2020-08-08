@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+.gallery{
+    width: 100%;
+}
+img{
+    width: 250px;
+    vertical-align: top;
+    opacity: .5;
+    border:#484848 .1px solid;
+    padding: 5px;
+    margin: 20px 20px;
+}
+img:hover{
+    opacity: 2;
+    border: white 1px solid;
+    /* opacity: none; */
+}

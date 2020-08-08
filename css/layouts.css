@@ -1,0 +1,44 @@
+body{
+    background-color: cornsilk;
+}
+.cajaPadre{
+    /* padding: 20px; */
+    width: 250px;
+    height: 250px;
+    background-color: wheat;
+    overflow: hidden;
+}
+
+.caja{
+    /* display: inline-block; */
+    width:125px;
+    height: 125px;
+    background-color: cadetblue;
+    /* padding-right: 5px; */
+}
+
+.uno{
+    float: left;
+}
+
+.dos{               
+    float: left;
+}
+
+.container{
+    width: 600px;
+    background-color: khaki;
+    overflow: hidden;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float:right;
+}
+
+p{
+
+}
