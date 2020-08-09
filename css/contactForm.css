@@ -1,0 +1,56 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f1f2;
+    
+}
+.container{
+    background-color: white;
+    width: 500px;
+    margin:20px auto;
+    
+    /* max-width: 1000px; */
+    padding: 20px 20px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.in{
+    width: 100%;
+    margin: 10px auto;
+    border: 1px solid #b7c7db;
+    border-radius: 3px;
+    text-align: left;
+    padding: 20px;  
+}
+
+input.in:focus{
+    border:3px solid green;
+      
+} 
+
+textarea.message{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 120px;
+    max-height: 250px;
+} 
+.container input[type="submit"]{
+    /* width: 40%; */
+    width: 200px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: green;
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input.btn:hover{
+    color: white;
+    background-color: green;
+}
