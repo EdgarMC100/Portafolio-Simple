@@ -1,25 +1,19 @@
 body{
     background-color:rgb(74, 70, 91);
-    /* padding: 20px 10%; */
     font-family: Arial, Helvetica, sans-serif;
 }
 * {
     margin: 0;
     padding: 0;
-    /* -webkit-box-sizing: border-box; 
-     -moz-box-sizing: border-box; */
     box-sizing: border-box;
   }
-
 .container{
-    width: 90%;
+    width: 100%;
     margin: 20px auto;
     max-width: 1000px;
-    margin: 20px auto;
     overflow: hidden;
 
-}
-  
+} 
 header{
     background: #fff; 
 }
@@ -38,7 +32,6 @@ header{
     list-style: none;
     float: left;
 }
-
 .menu li > a{
     font-size: 1em;
     color: black;
@@ -50,13 +43,11 @@ header{
     background-color: black;
     color: white;
 }
-
 .main{
     width: 70%;
     float: left;
     background-color: white;
 }
-
 .posts{
     padding:40px;
     /* background-color:#ff8000; */
@@ -72,7 +63,6 @@ header{
     margin-bottom: 20px;
     line-height: 25px;
 }
-
 img{
     width: 100%;
     vertical-align: top;
@@ -92,23 +82,19 @@ aside div.widget a{
     color: white;
     display: inline-block;
 }
-
 aside div.widget a:hover{
     color:  #8f8f8f;
 }
-
 .widget{
     margin-bottom:20px;
     color: white;
 }
-
 .widget > h3{
     color: #ff8000 !important;
     border-bottom: #ff8000 solid ;
     margin-bottom: 10px;
     margin-top:0px
 }
-
 .widget ul li{
     /* text-align: center; */
     list-style-type: none;
@@ -134,4 +120,22 @@ footer p{
     text-align: center;
     /* align-content: right; */
     /* display: inline-block; */
+}
+
+@media screen and (max-width:700px){
+    section.main{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+    .container{
+        padding: 0;
+        margin: 0;
+    }
 }

@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box  ;
+}
+
+.container{
+    width: 1000px;
+    min-width: 1000px;
+    margin: 20px auto;
+    background-color: thistle;
+    overflow: hidden;
+}
+
+header{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+/* */
+.main{
+    width: 700px;
+    float: left;
+    padding: 10px;
+    background-color: white;
+    height: 300px;
+    text-align: center;
+    text-align: justify;
+
+}
+
+aside{
+    width:300px;
+    float: left;
+    background-color: #EDBFB7;
+    height: 300px;
+    text-align: justify;
+    padding: 20px;
+}
+
+footer{
+    clear: both;
+    background-color:gray ;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
