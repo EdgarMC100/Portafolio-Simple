@@ -1,0 +1,82 @@
+
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: cadetblue;
+}
+
+div.container{
+    margin:auto;
+    background-color: salmon;
+}
+
+header{
+    margin: 0 50px;
+    display:flex;
+    flex-grow: 1;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    height: 100px;
+    display:flex;
+    flex-direction: row;
+    /* align-items: center; */
+    align-items: center;
+    
+
+}
+.letter{
+    background:rgba(249, 219, 189);
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header nav.menu{
+}
+header .logo p{
+    /* margin:10px 20px; */
+    padding: 15px;
+}
+
+.ft-letter{
+    height: 100px;
+}
+div.logo > .ft-letter p{
+
+    /* height: 80px; */
+    
+}
+
+.st-letter{
+    height: 100px;
+    transform: skewX(20deg);
+
+}
+
+.st-letter p{
+    transform: skew(-20deg); /* UNSKEW */
+}
+.th-letter p{
+    transform: skew(20deg); /* UNSKEW */
+}
+.th-letter{
+    height: 80px;
+    height: 100px;
+    transform: skewX(-20deg);
+    
+
+}
+
+.fo-letter{
+    height: 100px;
+}
