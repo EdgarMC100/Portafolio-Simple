@@ -1,0 +1,8 @@
+.container{
+    display: grid;
+    gap:20px;
+    /* width */
+    grid-template-columns: minmax(300px,1fr) 1fr; 
+    /* height */
+    grid-template-rows: minmax(100px, 450) 400px;
+}
