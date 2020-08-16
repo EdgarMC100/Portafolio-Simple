@@ -1,0 +1,98 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    /* It's a bad practice put it here but yolo*/
+    /* border-radius: 5px;*/
+}
+
+body{
+    background-color: rgb(232, 235, 243);
+    color: black;
+}
+.container{
+    background-color:rgb(232, 235, 243);
+    width: 90%;
+    max-width: 1000px;
+    margin:20px auto;
+    display: grid;
+    grid-template-columns:repeat(3,1fr); 
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: "header header header"
+                         "main main sidebar"
+                         "widget-1 widget-2 sidebar"
+                         "footer footer footer";
+    gap: 15px;
+}
+
+.container header,
+.container aside,
+.container > div,
+.container footer{
+    display: flex;
+    /* align-content: center; */
+    justify-content: center;
+    align-items: center;
+}
+.container header,
+.container .main,
+.container aside,
+.container > div,
+.container footer{
+    background-color: white;
+    padding:20px;
+    border-radius:4px;
+}
+
+.container header{
+    background-color: darkblue;
+    color: white;
+    grid-area: header;
+}
+
+.container .main{
+    background-color: white;
+    color: black;
+    grid-area: main;
+}
+
+.container .main h1{
+    text-align: center;
+    margin-bottom:10px;
+}
+
+.container aside{
+    background-color: rgb(250, 164, 63);
+    grid-area: sidebar;
+    min-height: 100px;
+}
+
+.container .widget1,
+.container .widget2{
+    background-color: rgb(73, 141, 214);
+    color:rgb(255,255,255);
+    height:100px;
+}
+.container .widget1{
+    grid-area: widget-1;
+}
+
+.container .widget2{
+    grid-area: widget-2;
+}
+
+.container footer{
+    background-color: black;
+    grid-area: footer;
+    color:white;
+}
+
+@media screen and (max-width:760px){
+    .container{
+        grid-template-areas: "header header header"
+        "main main main"
+        "sidebar sidebar sidebar"
+        "widget-1 widget-1 widget-2"
+        "footer footer footer";
+    }
+}
