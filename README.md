@@ -1,2 +1,2 @@
-# Portafolio
+# Practicing
  JustWebDesign HTML/CSS/JS
