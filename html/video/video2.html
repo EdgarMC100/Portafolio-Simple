@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://vjs.zencdn.net/7.8.4/video.js"></script> -->
+    <!-- <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" /> -->
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #f4f4fa;
+        }
+        header{
+            padding-top: 50px ;
+            height: 400px;
+            background-color:#1d87d8;
+            position:relative;
+            top:0;
+            text-align: center;
+            width: 100%;
+        }
+        header h1{
+            color: white;
+        }
+        .container{
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            /* position: relative; */
+            
+        }
+        main{
+            margin-top: 150px;
+        }
+        video{
+            width: 1000px;
+            position: absolute;
+            top:150px;
+        }
+        article{
+            background-color: white;
+            padding: 40px;
+            position: relative;
+            top:150px;
+        }
+
+        article h2{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>This is a header</h1></header>
+    <main>
+        <div class="container">
+            <div class="player">
+                <video class="" controls>
+                    <source src="../../assets/keyboard.mp4" type="video/mp4">
+                </video>
+            </div>
+            <article>
+                <h2>This video is about</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad natus aspernatur nemo est dolorum iusto illum consectetur non at, nisi consequatur iste, nesciunt ipsam quo vel esse obcaecati autem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad natus aspernatur nemo est dolorum iusto illum consectetur non at, nisi consequatur iste, nesciunt ipsam quo vel esse obcaecati autem.</p>
+            </article>
+            
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+    <script>
+        /*
+            event fires when the initial HTML document has been completely 
+            loaded and parsed, without waiting for stylesheets, images, 
+            and subframes to finish loading.
+        */
+        document.addEventListener('DOMContentLoaded',()=>{
+        // window.addEventListener('load',()=>{
+            let rep = videojs(document.querySelector('.video-js'),{
+             fluid: true
+        
+            });
+        });
+
+    </script>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Open Sans', sans-serif;
+        }
+        header{
+            background: #1D87D8;
+            width: 100%;
+            height: 400px;
+            position:absolute;
+            top:0;
+            text-align: center;
+            padding: 50px;
+        }
+
+        header h1{
+            font-family: 'Open Sans', sans-serif;
+	        font-weight: 300;
+        }
+        main{
+            margin-top: 150px;
+        }
+        .container{
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .player{
+            /* position: relative;   */
+        }
+        .em-video{
+            /* z-index: 90; */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Video Player</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="player">
+                <video  class="em-video video-js vjs-big-play-centered" id="video" controls>
+                    <source src="../../assets/keyboard.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <article>
+                <h2>This video is about</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad natus aspernatur nemo est dolorum iusto illum consectetur non at, nisi consequatur iste, nesciunt ipsam quo vel esse obcaecati autem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad natus aspernatur nemo est dolorum iusto illum consectetur non at, nisi consequatur iste, nesciunt ipsam quo vel esse obcaecati autem.</p>
+            </article>
+        </div> 
+    </main>
+
+
+    <!-- <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="../../assets/mia.png"
+    data-setup="{}"
+  >
+    <source src="../../assets/oceans.mp4" type="video/mp4" />
+    
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video> -->
+
+  
+</body>
+</html>

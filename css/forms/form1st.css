@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f1f2;
+  font-family: "Slabo 27px", serif;
+  font-size: 18px;
+}
+body div.container {
+  border-radius: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  width: 300px;
+}
+body div.container form {
+  display: flex;
+  flex-direction: column;
+}
+body div.container form div.inputs {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+}
+body div.container form div.inputs div.person-data {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+body div.container form div.inputs div.person-data input[type=text], body div.container form div.inputs div.person-data input[type=email] {
+  display: inline-block;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 75%;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid gray;
+}
+body div.container form div.inputs .genre {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+body div.container form div.inputs .genre input[type=radio] {
+  display: inline;
+  margin-right: 5px;
+  display: none;
+}
+body div.container form div.inputs .genre label {
+  margin-right: 20px;
+  display: inline-block;
+  background: #EDA4BD;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+}
+body div.container form div.inputs .genre input[type=radio]:checked + .label-radio {
+  background: #EB7BC0;
+}
+body div.container form div.inputs .terms {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+body div.container form div.inputs .terms input[type=checkbox] {
+  margin-right: 10px;
+  outline: 0;
+}
+body div.container form div.inputs ul.error {
+  display: none;
+  margin-top: 20px;
+  background: #ce1818;
+  border-radius: 3px;
+  color: #fff;
+  padding: 15px 10px;
+  padding-left: 40px;
+  list-style: none;
+}
+body div.container form input[type=submit] {
+  width: 100%;
+  height: 30px;
+  margin: 0 0 !important;
+  background: #EEBDC0;
+  border: none;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/*# sourceMappingURL=form1st.css.map */
